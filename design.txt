@@ -37,6 +37,7 @@ Very Bright Yellow Devil / Chicken Nugget Devil
 
 Slur 2
 Slur Machine
+Thomas the tank engine
 
 Slur 3
 Epic Final Boss Stage. Leads to a long boss hallway which eventually leads to the shop.
@@ -47,7 +48,7 @@ Zero
 
 #Music#:
 
-
+Title Theme: Caltron 6 in 1 title theme
 
 Stage Select: Dinosaur Select Theme From Colour a Dinosaur
 Stage Start: MM2 Theme Cut Off
@@ -65,14 +66,7 @@ Quack Man: Duck Tales Moon With Quacks
 
 #Shop#:
 Book of Hairstyles: 10 Screws
-Large Energy Pellet: 300 Screws Unlocks Forte
-
-
-
-
-
-
-
+Large Energy Pellet: 300 Screws (Unlocks Forte Mode)
 
 #Forte Mode#:
 The slur fight is sideways.
