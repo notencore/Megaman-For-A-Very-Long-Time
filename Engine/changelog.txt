@@ -1,0 +1,383 @@
+1/9/2017
+- Added Mr X stage 2, 4 and Wily 4 tilesets from MM6.
+- rearranged folders and folder content
+- made all MM6 gimmicks compatible with reversed gravity
+- yokublocks reset themselves properly now
+- all gimmicks should now be affected by flash stopper
+- fixed conflicting resource names
+- Added Cossack 1, Cossack 2, Cossack 3, Cossack 4, Napalm Man, Gemini Man, and Shadow Man tilesets
+- objWaterFiller works fine now
+- Added Quickman, Sparkman, MM3 Wily 5, and MM3 Wily 6 tilesets
+- Fixed direction of the first mm6 miniboss in enemy showcase
+- Fixed a bug where getting hit while text was active would make you regain control
+- Fixed tile animator objects being visible
+- Fixed slow moving sasoreenus not going into quicksand properly
+- Added a 'dir' option in creation code for all 3 shield attackers
+- Added a seperate object for vertical boss doors
+- Fixed air tikis not spawning gremlins
+- Added an option to set the partner of a Mr. X scale platform manually
+- Added Airman, Flashman, Doc Shadow, Doc Needle, MM4 Wily 1, MM4 Wily 2, MM4 Wily 3, MM4 Wily 4, Darkman 2, MM5 Wily 4, Mr. X 1, Mr. X 3, and MM6 Wily 1 tilesets.
+- Fixed wheel cutter going through plantman
+- Galaxy portals now propel you higher
+- Fixed metall run n guns scaling walls
+- Fixed not being able to slide in oil
+- Fixed the upgraded charge shot not working against Pooker
+- Pooker now faces your direction and moves based on where you're facing
+- Fixed Pooker deflecting Rush
+- Made Rush Coil bounce you very slightly higher
+- Fixed being able to despawn key gates
+- Fixed blocky throwing its body at you when it died
+- Made schworms launch their worms a bit higher
+- Made count bombs count down faster
+- Fixed some bugs involving Komuso Man's mine. Also fixed the spelling mistake in its name.
+- Wheel Cutter now detaches itself if mega man is invisible
+- Fixed sakugarne being visible during galaxy man portal stuff
+- Sled destroys sakugarne now
+- Fixed rush jet crashing when hitting moving platforms (?)
+- Fixed sakugarne getting attached to you through screen transitions
+- Fixed needles not hurting or reflecting projectiles
+- Fixed MMV gravity swap stuff appearing in front of you
+- fixed the MM3 slide tiles to be more accurate to the original AND not break the game
+- made Sakugarne bounce off projectiles
+- fixed the weird gravity flip involved with sakugarne
+- updated the boss room
+- added general gimmick showcase
+- fixed nobel nickels (may need to be better programmed)
+- fixed the key coins
+- fixed bug with sakugarne projectile bouncing
+- updated MM8 sled, added sled stopper
+- fixed the boss barrier
+- made the MM4 ring platforms solid tops (just made more sense imo)
+- fixed the buster animation, tied it to isShoot
+- fixed Puyoyon (needs work, can be done over development of the game)
+- fixed the centuar water tiles
+- added alternate colours for Knight man and Centuar man (unsure if all colours have been replaced in Centuar man)
+- added mystery item to the MM3 showcase
+- fixed the galaxy man portals to scroll vertically (I DID Y INSTEAD OF y AAAAA)
+- made plantman platforms go up and down by 1 pixel like the original
+- fixed the pooker enemy to explode on contact with solids
+- made all shield attacks stop at the shield attacker barrier
+- updated the boss door to work when going up (still buggy)
+- Added objMegaman8SledSpeedTrigger to change the speed of the mm8 sled while on it
+- Added objBoubou and objBoubouThick for the mm8 sled
+- Also added in objBigTelly, objPenpenEV, objRabbiton, and objKemumakin for use with the mm8 sled also
+- Made player projectiles get the momentum from the mm8 sled so it isn't impossible to fight while on it
+- FINISHED TILESETS
+- Atomic Chickens are killable now
+- Fortress boss intros freeze you
+- noone is a valid argument for itemDrop now
+
+1/8/2016
+- added Top Man
+- Added Yoku Spikes
+- Added Yoku Spike Template Blocks
+- Added Key Coins
+- Added Noble Nickels
+- Added seven Upgrades you can activate by pressing 6: Charge Upgrade, Drop Upgrade, Shot Upgrade, Sturdy Helmet, Skull Amulet, Super Slide, Energy Saver
+- Added Surprise Cans from MM3
+- added the remaining enemy showcase rooms for Megaman 3-6
+- added teleoporters back to the HUB
+- fixed the mini boss barrier to delete blocks within a range (still facing issues, stand on the leftmost point of the miniboss platform in the MM5 enemy showcase while fighting the Octopuss)
+- made wave bike work in both directions
+- added colour variants to enemies that were missing them in MM4
+- fixed that you could shoot the MM3 Mets when they are hiding
+- every enemy can now be sliced into pieces by using slash claw
+- fixed that Mega would spaz out when standing ontop of the big wave man bubble
+- fixed that certain enemies would not respawn properly
+- fixed that Mega Man would not get unfreezed when killing Chill Man
+- gave the option for bosses to have boss dialogue.
+- changed the apache joe hit box so that he doesn't clip through walls
+- added a charge bar that shows you how much you have charged your charge shot
+- fixed that bosses would get invincible as well as not being able to hurt Mega Man after a screen transition occurs
+- added the options "V-SYNC", "CHARGE BAR" and "SHOW FPS" to the options menu
+- split the options menu into two different pages
+- corrected the position of the health- and weaponenergybar
+- the health- and weaponenergybar now flickers so that you can see objects that are behind it (that was a thing in the original games too)
+- Made quint less aggressive
+- Added the seemingly-intended-but-unused neverDespawn creation code behavior in YokuBlocks
+- prtGimmick uses the same respawn/despawn system as prtEnemy now
+- added yoku blocks to the MM2 showcase
+- you can slide by pressing up and the jump button when gravity is reversed
+- Wire now sticks to moving platforms
+- Sasoreenu now sinks into quick sand if it hits a wall and sand is below
+- removed the unused `objBuildingPlatformPiece
+- somehow fixed the ring man platform in the MM4 showcase by.... placing it down again
+- made dust blocks dissapear after 13 seconds
+- fixed the half pipe bright platforms frrom going back to it's start position when scrolled back on screen
+- the sprites of the waterfountains has been redone
+- reworked the disappearing Sheep Man tiles
+- certain objects are now visible during screen transitions
+- the landing sound does not play when you hit the ground while climbing
+- Nerfed Flash Stopper down to 4 shots
+- Readded 'invincible' and 'timeUntilDeath' and made the code not bad (wtf was i thinking before)
+- Made keys and locks respawn upon death
+- Pause menu now displays more information
+- Fixed upside down Gravitron gumballs not having collision
+- Fixed not being able to shoot normal buster shots when you don't have any flash stopper left
+- Fixed Komasaburo tops spawning items too low
+- Removed objWaterlevel from MM3 gimmick showcase
+- Fixed Sonic Bills not exploding properly
+- Fixed Noble Nickels having gravity and having a weird hitbox
+- Fixed key coins having gravity
+- Fixed Mega Man's arm cannon getting stuck if you shot while going through a boss gate or teleporter
+- Fixed crazy razies to be more accurate
+- Fixed animations on the MM8 sled
+- Fixed a crash with the battontons if you died with them onscreen
+- fixed noble nickels and key coins being grabbable by hornet chaser
+- Removed waterlevel objects from the autotiler
+- objTopsolid now works with the autotiler
+- Fixed an AI quirk of Crash Man.
+- Gemini Laser now fires again.
+- Minor change to splash woman.
+- the Battontons now behave like they did in MM4
+- made a ton of enemies more accurate and less glitchy
+- Added Topman, Needleman, Magnetman, Hardman, MM3 Wily 1, MM3 Wily 2, MM3 Wily 3, MM3 Wily 4, Skullman, Toadman, Dustman, Ringman, Diveman, and Drillman tilesets.
+- Fixed noble nickels despawning upon death
+- Added Plant Man and Yamato Man tilesets.
+- fixed the MM4 bright man platforms
+- fixed a crash in the info box if the message was too short
+- fixed the MM5 shooter platform enemy I can't remember the name of
+- Added Concreteman, Magmaman, Splashwoman, Tornadoman, Galaxyman, Hornetman, Jewelman, and plugman tilesets
+
+1/3/2016
+- fixed solid platform collision system
+- added Quint
+- made teleporters stop flashing when a boss is beaten
+- changed the moving jumpthrough platforms
+- fixed some bugs related to Quint
+- made energy elements bounce out of pits
+- updated the mecha dragon boss control to be more in line with other boss fights
+- made miniboss barrier function for regular bosses (you can make a boss door explode if you want)
+- fixed hard crash if you disabled super arrow and pressed down while on wire
+- fixed yoku blocks not despawning their solids
+- fixed snakey's direction in mm3 gimmick showcase
+- fixed positioning of DISABLED in the pause menu
+- fixed bosses vs flash stopper finally!!!!
+- fixed bladers
+- updated the quick lasers to be able to be used vertically
+- fixed a bug so that quick lasers only activate if they're inside the current section
+- updated the MM2 gimmick showcase to show off the lasers
+- updated sakugarne to use the players ride sprites instead of a seperate sprite
+- Added Komuso Man (R&F2: Challenger from the Future)
+- Actually fixed the Centaur Man crash.
+- Minor change to Komuso Man so his projectiles actually despawn upon death. This should really be applied to all bosses, might do later.
+- updated megamans sprites, now his eyes and mouth don't glow when charging
+- also colour keyed the outlines to make it clear what is and isn't being used
+- updated the jumping animation to use all 4 jump frames instead of just 2
+- updated the slides sprites to use both frames too
+- updated the character setting to be in the create event of objGlobalControl so your skin doesn't reset each time a room loads
+- made it so MM9 alt colours are only used when the skin is set to megamans
+- updated protomans sprite sheet to be correctly alligned
+- added Crash Man
+- made minor optional modification to Komuso Man's AI, more incoming.
+- fixed it so Centaur Flash (and any other time stopping abilities) work correctly with Wheel Cutter, Sakugarne and Wire Adapter.
+- made the fight against Crash Man a lot more accurate to how it was in MM2
+- added chill man.
+- made the fight against Chill Man more accurate to how it was in MM10
+- added cut man's knockback as an optional creation code mod.
+- minor fix to a graphical issue with plant man
+- modified all boss projectiles so they now despawn upon their death.
+- Fixed crash with rackaser
+- Fixed sakugarne being invisible in sandstorms
+- Fixed hard crash if you tried to select sakugarne while it was disabled
+- Fixed the snake body not moving
+- Fixed super arrow still taking energy while the game was paused
+- Fixed wire staying attached to solids that delete themselves (i.e. staying attached to a yoku block that disappeared already)
+- Fixed coltons being fokin broek
+- Fixed volt man being able to deflect flash stopper
+- added Gemini man as the MM3 rep (I believe this accounts for reps from MM1-6)
+- updated the boss gimmick stage to fix the teleporter lock layers
+- enemies respawn properly now
+- added Eddie to the MM4 showcase
+- slowed down the animation speed of the quicksand
+- fixed that you got pushed upwards when trying to climb a ladder while sliding through a narrow passage
+- the solid part of the dust blocks now goes away when the block is destroyed
+- bosses can drop keys now
+- Added Heat, Crash and Wood tilesets
+- Fixed flash stopper freezing explosions
+- fixed an issue with splash woman spawning in the wrong direction.
+- fixed cutman clipping out of the room when he hits a wall that mega man happens to be next to at the time.
+- applied same fix to guts man too.
+- fixed that darn chill man glitch that softlocked the game if you killed him at the wrong time.
+- made chill spike deal damage again.
+- made all of centaur man's projectiles immune to flash stopper.
+- made all of gemini's projectiles despawn on death.
+- added in optional creation code to the parent boss objects for users to set how long their hit invunerlabiltiy lasts.
+- fixed tama's direction in the MM3 gimmick showcase
+- Made the energy element actually lock your movement
+- Renamed objAntiWater to objWaterForceStop and objMegaporter to objTeleporterPressUp
+- Fixed typos in the object names for Garyoby and Teckyun
+- Added missing color variations for Blader and Bombomb
+
+12/29/2016
+- Added custom spawners
+- Added the weapon options tweaker thing
+- Tweaked pause menu stuff
+- Got rid of ahem questionable logic I did in the new enemy despawn code
+- Fixed Electric Gabyoall, and gave it the ability to automatically set its own height (though you can still set it with creation code, which allows you to have ones that have a shooting range that goes through blocks)
+- Fixed Proptop
+- Fixed MM1 Sniper Joe
+- Fixed ride  armor Sniper Joe
+- Fixed wave bike disabling weapons
+- Fixed crash man platforms getting screwed up by despawning
+- Added missing sfx to Teckyun and wave man pipes
+- Fixed being able to reflect some things with Jewel Satellite you really shouldn't be able to reflect
+- Fixed calibrateDirection being active during flash stopper
+- Made it just a general rule that jewel satellite can't reflect fire
+- Fixed Rembakun's missiles
+- Megaman now dies when he falls into a pit when gravity is reversed
+- fixed/ nerfed slash claw
+- fixed Killer Bullet
+- fixed Peng
+- added a spawner for Killer Bullet
+- added a spawner for Peng
+- added a spawner for Bombomb
+- fixed Blocky's cans
+- Airtiki only spawns gremlins when Mega Man is on top of it like in MM2
+- Airtiki's animations have been corrected
+- added a spawner for Flying Shell
+- added a spawner for Pipi
+- Added all MM1 tilesets
+- Added Metal Man tileset
+- Lots of folder organization in Backgrounds
+- Fixed a bug with sniper joe that was crashing watertest
+- Fixed a crash if you died while the wire was going up
+- Disabled wire while on the sled
+- added some missing tiles to the snakeman tileset
+- moved the callibrate direction in the boss parent to activate only during a boss itnro
+- fixed gravity man
+- fixed auto scrolling
+- fixed spine
+- finally fixed that bug that lifts Mega Man into the air when Sakugarne touches something that reflects it
+- updated the oil object to stop the player from sliding into it
+- updated the oil to use event user for it's splash effect so that it can be more customizable
+- made a cossak snow object as a oil variant
+- fixed the dust block parent to be the solid variety (who kept changing that?)
+- added a sign object that people can use to display text in their levels
+ - Added more tiles to the beta tileset sheet so people have more of a base
+- Removed the slope sprite code as it's too complicated and megaman games with slopes don't have special sprites anyway
+- MADE SLOPES ACTUALLY GOOD AND THEY'RE REALLY SEXY NOW
+- added Mumaria
+- Added an 'itemDrop' option to enemies
+- Fixed being able to charge while buster is disabled
+- Fixed a crash I caused by renaming the snakeman bg
+- Made all moving platforms get stopped by flash stopper to fix numerous bugs
+- Fixed you being able to force the autoscroll object to be visible
+- Fixed a crash when you used flash stopper on caricarries
+- Fixed broken sprite centering for new shotman
+- Fixed climbing jamacy sprite centering
+- Made gravity flipping galaxy teleporters have flipped sprites
+- Fixed being able to mess up cannonpeller's projectiles by standing in the right place
+- Wanaans now actually function
+- Fixed subeil's broken hitbox
+- Finally fixed the error that crashed the game if you killed a boss early somehow
+- Fixed imorms being able to crawl through walls
+- fixed Dada
+- fixed top spawners
+- destroyable blocks should now be a lot less glitchy
+- fixed that you can shoot on the MM9 magnetic platforms
+- you can now turn around while using slash claw midair
+- renamed the object typo from sprMumaria to objMumaria
+- added pharoh mans tileset including animated tiles
+- added pharoh mans stage as a more complicated level example
+- added Volt Man (DOS), Splash Woman (MM9), Plant Man and Centaur Man (MM6) as bosses.
+- added two scripts to deal with Time Stopper type scenarios on players.
+- added an "anti water" block which disables the water state if the player is in one.
+- actually gave Cut Man a weakness.
+- Added missing "Disabled" sprite
+- Gave certain enemies specific weaknesses
+- Rebalanced triple blade and sakugarne
+- Blockies no longer scale walls
+- Added keys and locked doors
+- Readded the timeUntilDeath and invincibile options
+- Fixed the homing of Taban, Batton and Battonton
+- reverted my changes to jamacies
+- Fixed sandstorms pushing you off ladders
+- fixed nitro cutter
+- Made you able to skip the textbox text gradually being printed to the screen by pressing pause
+- Added the textbox sound effect
+- Added Yoku Block template objects
+- Made Yoku Blocks extend prtAlwaysActive and got rid of the dead check in them so they don't do weird stuff in scrolling sections
+- Finally fixed enemies spawning if they're right outside of your current section
+- Part of fixing the respawning was by renaming deactivateUnimportantObjects to activateImportantObjects, removing the instance_deactivate_all(true) from inside it, and made the things using the script call instance_deactivate_all instead to make it more flexible
+- Fixed being able to spring off of the plant man springs by walking against them from their right
+- Made Sasareenu appear above the quicksand in the editor but still be behind it in-game
+- Made the Sasareenu enemies in Pharaoh Man's stage start under the quicksand
+- Added creation code to objYokuBlock that lets you change its sprite to a custom one, in case you don't want to bother with creating new objects
+- fixed that fans can push you inside moving platforms
+- overhauled the moving platform code to be less bad and generally more solid
+- made it so that moving platforms in general can activate screen transitions
+note: new bugs may occur due to the new code and more testing needed
+- programmed the platforms to work with anti gravity physics
+- fixed a bug in the MM5 crumbling tower that caused the player to get stuck in the ground
+- made player projectiles move up with the tower
+- added a debug key to flip gravity
+- minor change, made megamans charge shot match his current palette, this only really applies player skins
+
+12/22/2016
+- Added new debug keys. 1 - Refill everything. 2 - Memes (kills you). 3 - Permanent invincibility. 4 - Permanent full health.
+- Moved costume debug keys to 7 (Megaman), 8 (Protoman), 9 (Bass), 0 (Roll)
+- Added MM6's "Run and Gun" metall
+- Made Metal Man die from reflected Metal Blades in 1 hit
+- Fixed a few incorrect health/damage values in the MM6 enemies
+- Added one behavior into CyberGabyoall that was forgotten about
+- Removed some show_debug_message calls
+- Added a check for Mega Man existing in AuAu shot
+- Fixed weirdness with Minibosses not being able to face right properly
+- wire now works in reverse grav
+- tweaked super arrow speed stuff
+- fixed flashing for junk golem, rackaser, blocky, etc
+- fan fiend and yaffu can't push you off ladders any more
+- fixed bosses flying into space when you use flash stopper
+- made only pharoah and guts affected by flash
+- fixed being able to move during boss intros
+- folder organization
+- Updated the miniboss block to behave more like a solid block only for megaman
+- made the mini boss block destroy any default tiles that it covers (this does not destroy solid blocks)
+- updated the blader enemy to behave more accurate to the original enemy
+- Made Metall Potton Drop the Run and Gun Metalls now
+- Made the MetallJumps have a radius of 256 when spawned from a MetallPotton
+- Made MetallJumps only get a boost up from jumping if they're on the ground
+- Made Metalls Jump, Swim, Spin, DX, and MM3 all play the sfxEnemyShoot sfx when they shoot
+- Made Yaffu not effect you when teleporting
+- Added direction creation code to almost all minibosses
+- Fixed Big Eye
+- Fixed Fan Fiend
+- Controls, options, etc are now saved
+- made tiles placed with the boss door as the parent use the graphics of that tile instead of the defaul boss door graphics
+- fixed the doors to actually work when you place their tile down
+- made an example custom boss door in the MM5 gimmick showcase
+- Redone the two music scripts to be more user friendly.
+- Gave all the stages the proper music script.
+- Reedited the songs used to loop properly and not have fadeouts and the like. (You'll have to redistribute the songs.)
+- Got all the songs in each stage to loop properly, include the boss themes.
+- Replaced the boss theme with Mega Man 3's to show off how to make boss themes loop properly.
+- Made the Drill Man switch's hide block objects not be visible during screen transitions anymore
+- Made Mega Man always face the boss right before they appear and do their intro
+- Made the lock player movement script not stop y movement, so the player can still do stuff like fall down to the floor from a raised boss door.
+- Made the part in the xSpeedAim script that's suppose to subtract the quadratic actually subtract the quadratic
+- Made respawning/despawning of enemies better (haven't completely fixed the glitchyness of it yet though)
+- Made pressing both weapon switch weapons to switch back to the buster not have to be frame perfect
+- Added some bouncing guys to the spring section in the MM6 Gimmick Showcase
+- Fixed clowns colliding with dead gears
+- Fixed MM5 spin platforms crashing if you died when they fell down
+- Fixed a crash if you died while being pulled up by wire adaptor
+- Ring Man platforms aren't semisolid any more
+- Fixed teleporters messing up whatever weapon you had selected
+- Fixed the toad rain pushing you if you were on the ceiling with wire adapter
+- Made yasichi actually work like a yasichi
+- Fixed losing the ability to slide if you died on the sled or jetski
+- Fixed the MM5 spin platforms overriding your shoot animation
+- Made wave bike just play error sounds when you try to switch weapons instead of jankily forcing you to buster
+- Fixed weird wire placement when in reverse grav (kinda)
+- Fixed quick weapon switch icon placement while in reverse grav
+- Reverted flash stopper ammo back to 7
+- Fixed being able to shoot and charge while on sakugarne
+- Made sakugarne's energy bar visible again
+- Made sakugarne drain energy again
+- Fixed being able to climb on ladders while on sakugarne
+- Fixed wire endlessly extending into space if you shot it offscreen while in reverse grav
+- Fixed the timing on sheep man's disappearing blocks
+
+12/19/2016
+- Initial release

@@ -1,0 +1,90 @@
+---- DEFAULT TILESET ANIMATION SETTINGS ----
+Here are all the settings for objTileAnimation for all the default tilesets. Feel free to use these in your level.
+Each of these have to be on seperate layers. Change animationLayer to whatever layer you're putting the tile on.
+Use Ctrl+F to find the tileset you're looking for quickly.
+
+This is incomplete, but it's...something.
+
+* tstLavaAnimated *
+animLength = 3;
+animTime = 6;
+animID1 = tstLavaAnimated2;
+animID2 = tstLavaAnimated3;
+animationLayer = 10;
+
+* tstGravitySwitches *
+animLength = 6;
+animTime = 5;
+animID1 = tstGravitySwitches1;
+animID2 = tstGravitySwitches;
+animID3 = tstGravitySwitches2;
+animID4 = tstGravitySwitches3;
+animID5 = tstGravitySwitches2;
+animationLayer = 10;
+
+* tstMetalman *
+animLength = 2;
+animTime = 4;
+animID1 = tstMetalmanAnimated;
+animateOnTransition = true;
+animationLayer = 10;
+
+* tstGeminiman *
+animLength = 3;
+animTime = 30;
+animID1 = tstGeminimanAnimated;
+animID2 = tstGeminimanAnimated2;
+animateOnTransition = true;
+animationLayer = 10;
+
+* tstShadowman *
+animLength = 3;
+animTime = 8;
+animID1 = tstShadowmanAnimated;
+animID2 = tstShadowmanAnimated2;
+animateOnTransition = true;
+animationLayer = 10;
+
+* tstHeatman *
+animLength = 3;
+animTime = 8;
+animID1 = tstHeatmanAnimated;
+animID2 = tstHeatmanAnimated2;
+animateOnTransition = true;
+animationLayer = 10;
+
+* tstSparkman *
+animLength = 2;
+animTime = 3;
+animID1 = tstSparkmanAnimated;
+animateOnTransition = true;
+animationLayer = 10;
+
+* tstDark4Pole *
+animLength = 4;
+animTime = 10;
+animID1 = tstDark4Pole2;
+animID2 = tstDark4Pole3;
+animID3 = tstDark4Pole2;
+animationLayer = 91;
+
+* tstMM2Wily5Teleporter *
+animLength = 2;
+animTime = 5;
+animID1 = tstMM2Wily5Teleporter1;
+animationLayer = 100;
+
+* tstMM2Wily5Computer *
+animLength = 4;
+animTime = 5;
+animID1 = tstMM2Wily5Computer1;
+animID2 = tstMM2Wily5Computer2;
+animID3 = tstMM2Wily5Computer3;
+animationLayer = 1000010;
+
+* tstCentaurWater *
+animLength = 3;
+animTime = 10;
+animID1 = tstCentuarWater1;
+animID2 = tstCentuarWater2;
+animationLayer = 51;

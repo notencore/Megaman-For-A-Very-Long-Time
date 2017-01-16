@@ -1,0 +1,478 @@
+---------- MAGMML2 OBJECT CREATION CODE GUIDE ----------
+Here is the documentation for every single enemy option so you don't have to check creation code constantly.
+
+----- ENEMIES -----
+
+** ALL ENEMIES **
+- invincible: If set to true, the enemy will be tinted grey and be immune to all attacks.
+- timeUntilDeath: the number of frames until the enemy automatically dies. Useful for, for example, killing a Petit Snakey by itself and setting off the chain of snake blocks.
+- itemDrop: the item that the enemy will drop upon death. Can be an enemy. If set to objKey, the key will only be dropped once and will not be dropped again if the enemy is respawned. The key will also have a special animation.
+
+** MM1 **
+Suzi (aka Octopus Battery)
+- col: color of the enemy. 0 = red (default). 1 = orange. 2 = blue.
+- dir: direction of the enemy. "h" or "v" are valid ("h" = horizontal (default); "v" = vertical)
+- startDir = the direction it starts moving in. -1 and 1 are valid. 1 makes the suzi move right/down first (default); -1 makes the suzi move left/up first
+
+Beak
+- col: color. 0 = red (default). 1 = orange. 2 = blue.
+- dir: -1 is facing left, 1 is facing right
+
+Screw Bomber
+- col: color. 0 = red (default). 1 = orange. 2 = blue.
+
+Big Eye
+- col: color. 0 = red (default). 1 = blue. 2 = red with orange eye.
+
+Spine
+- col: color. 0 = orange (default). 1 = blue.
+
+Flea
+- col: color. 0 = blue (default). 1 = red.
+
+Blader
+- col: color. 0 = green (default), 1 = blue.
+
+Killer Bullet
+- col: color. 0 = red (default). 1 = blue. 2 = orange.
+
+Bombomb
+- popDelay: how long it is until the Bombomb is ready to pop out, in frames. Default is 1 frame after being onscreen.
+- col: color. 0 = blue (default). 1 = red.
+
+Watcher
+- popDelay: how long it is until the Watcher appears, in frames. Default is 1 frame after being onscreen.
+- dir: direction. -1 is up, 1 is down. Down is default.
+
+Tackle Fire
+- popDelay: how long it is until the Tackle Fire jumps out, in frames. Default is 1 frame after being onscreen.
+
+** MM2 **
+Fan Fiend
+ - blowSpeed: Speed at which the Fan Fiend pulls you in. Default is 0.5. If this is negative, Mega Man will be pulled in.
+
+Spring Head
+- col: color. 0 = blue (default), 1 = gray.
+- slowSpeed: speed that the Spring Head moves at when Mega Man isn't in its "field of vision". default is 0.25.
+- fastSpeed: speed that the Spring Head moves at when it "sees" Mega Man. default is 2.
+
+Prop Top
+- col: color. 0 = red (default), 1 = green.
+
+Lightning Lord
+- attachedToCloud: If set to true, it will automatically snap to the nearest cloud. Default is false.
+
+Hot Dog
+- dir: direction. 1 = right (default), -1 = left.
+
+Lantern Fish
+- dir: direction. 1 = right (default), -1 = left.
+
+** MM3 **
+Bubukan
+- col: color. 0 = orange (default), 1 = red
+
+Nitron
+- col: color. 0 = blue (default), 1 = orange
+
+Electric Gabyoll
+- height: How far down the bottom Gabyoll is. Enter in number of tiles (i.e. 1 = 16 pixels down, etc). Includes the tile the top Gabyoll is. If you don't set this, the top Gabyoll will automatically place the bottom one at the first solid tile it finds.
+- spd: The speed that the gabyoll will move at. Default is 0.6.
+- shootWait: how long the gabyoll waits in between electricity shots. Default is 70.
+- col: color. 0 = orange (default), 1 = red.
+
+Elec'n
+- dropIn: If it's true, it will drop down from the top of the screen to where you place it when you get close. Otherwise, it will just appear like a normal enemy.
+
+Penpen Maker
+- dir: direction. 1 = right (default), -1 = left.
+
+Big Snakey
+- dir: direction. 1 = right (default), -1 = left.
+- length: length of the snake's neck, in blocks. i.e. 2 = 2 tiles high.
+
+Giant Metall
+- dir: direction. 1 = right (default), -1 = left.
+
+Tama
+- dir: direction. 1 = right (default), -1 = left.
+
+** MM4 **
+Kabatoncue
+- dir: direction. 1 = right (default), -1 = left.
+
+Whopper
+- dir: direction. 1 = right (default), -1 = left.
+
+Escaroo
+- dir: direction. 1 = right (default), -1 = left.
+
+Moby
+- dir: direction. 1 = right (default), -1 = left.
+
+** MM5 **
+Pukapelly
+- col: color. 0 = teal (default), 1 = purple, 2 = red, 3 = blue, 4 = orange, 5 = green
+
+Lyric
+- col: color. 0 = orange (default), 1 = green, 2 = blue, 3 = red
+
+V
+- hasGravity: If it's false, the enemy will float in the air. Default is true.
+- isStationary: If it's false, the enemy will quickly move to the left towards Mega Man. This is an option because even though V appears to not move in the original MM5, it is actually programmed to quickly move left to help with the Wave Bike's illusion of movement.
+
+Bounder
+- col: color. 0 = red (default), 1 = green, 2 = purple.
+
+B Bitter
+- col: color. 0 = green (default), 1 = orange
+
+Tondeall
+- moveDist: the distance the enemy moves in pixels before turning around. Default is 32 (2 blocks)
+- moveDir: the direction the enemy moves. 0 = horizontal, 1 = vertical, 2 = diagonal right, 3 = diagonal left
+
+Sumatran
+- col: color. 0 = orange (default), 1 = white.
+
+Pukapucker, bottom half
+- moveDist: the distance the enemy moves in pixels before turning around. Default is 64 (4 blocks)
+- spawnHead: If set to false, the bouncing top half of the enemy will not spawn.
+
+Taban
+- col: color. 0 = green (default), 1 = pink
+
+Rock Thrown
+- col: color. 0 = green (default), 1 = red, 2 = orange
+
+Bomb Thrown
+- col: color. 0 = red (default), 1 = orange, 2 = green
+
+Metall Cannon
+- col: color. 0 = light green (default), 1 = dark green
+
+Subeil
+- col: color. 0 = green (default), 1 = red, 2 = purple
+
+Hirarian 427
+- col: color. 0 = green (default), 1 = red, 2 = blue
+
+Jet Bomb
+- col: color. 0 = orange (default), 2 = dark green, 3 = light green, 4 = blue
+
+Tatepakkan
+- col: color. 0 = orange (default), 1 = red, 2 = green, 3 = orange/green
+
+Nobita + Nobita Ceiling
+- moveDist: the distance the enemy moves in pixels before turning around. Default is 64 (4 blocks)
+
+Toss Machine
+- col: color of the projectile. 0 = grey (default), 1 = teal
+
+Suzy G
+- gravityFlip: if set to true, the gravity of the enemy will automatically be set. It'll be upside down if it detects a ceiling.
+
+Power Muscler
+- col: color. 0 = red (default), 1 = green, 2 = orange/purple
+
+Yudon
+- col: color. 0 = red (default), 1 = arm color depends on missile color.
+- missileCol: color of its projectile. 0 = green (default), 1 = blue
+
+Dachone
+- col: color. 0 = blue (default), 1 = green
+- dir: direction. 1 = right (default), -1 = left.
+
+Octoboss
+- dir: direction. 1 = right (default), -1 = left.
+
+Octoper OA
+- dir: direction. 1 = right (default), -1 = left.
+
+** MM6 **
+Cyber Gabyoll
+- dir: direction. 1 = on ground (default), -1 = on ceiling.
+
+Gabgyo
+- col: color. 0 = red (default), 1 = yellow
+- variation: Its behavior. 0 = will jump out of a pit (default), 1 = will swim back and forth.
+
+Heli Buton
+- variation: if set to 1, will be invisible at first and drop down with leaf effects when you get close.
+
+SW525
+- startDir: if set to 1, it'll start rightside up, otherwise it'll start upside down and drop from the ceiling
+
+Tadahou
+- col: color. 0 = purple (default), 1 = blue, 2 = light blue
+
+Teck
+- col: color. 0 = orange (default), 1 = red
+
+Twin Roader
+- col: color. 0 = green (default), 1 = orange, 2 = blue
+
+Wall Blaster II
+- col: color. 0 = red and green (default), 1 = green and red, 2 = orange and green
+- dir: direction. 1 = face right (default), -1 = face left
+
+Dachone Ltd Ed
+- dir: direction. 1 = right (default), -1 = left.
+
+Metall Potton
+- dir: direction. 1 = right (default), -1 = left.
+- Met1: One of the objects it can spawn. Can be any object.
+- Met2: Another object it can spawn. Can be any object.
+
+Gamarn and Gamadayu
+- dir: direction. 1 = right (default), -1 = left.
+
+Gorilla Tank
+- dir: direction. 1 = right (default), -1 = left.
+
+** OTHER **
+Tsuranattori
+- extraBirds: If set to greater than one, this number of additional Tsuranattori's will be created behind the leader.
+
+Petit Devil (Green)
+- angle: the direction it'll move. 0 = starts moving right and moves horizontally, 90 = starts moving up and moves vertically, 180 = starts moving left and moves horizontally, 270 = starts moving down and moves vertically
+
+Petit Devil (Yellow)
+- angle: the direction it'll move. 0 = starts moving right and moves horizontally, 90 = starts moving up and moves vertically, 180 = starts moving left and moves horizontally, 270 = starts moving down and moves vertically
+
+Piriparee Joe
+- col: 0 = orange (Joe, default), 1 = blue (not a Joe)
+
+----- BOSSES -----
+** ALL BOSSES **
+- HitInvun: - Set the length of the hit invulnerability of the boss. If this is 1 or lower, they don't have any. If not set, it is defaulted to 45 frames.
+
+objBossControl
+- music: the file name of the music that will play when you fight the boss.
+- musicVolume: 0-1. volume of the music
+- musicLoopSecondsStart: start point of your music loop, in seconds
+- musicLoopSecondsEnd: end point of your music loop, in seconds
+- SpawnType: the intro animation type for the boss. 0 = drop in, 1 = pop in, 2 = flashy come down thing like MM6, 3 = fortress boss
+- LockDoors: if set to true, all boss gates will lock when the boss is active
+- Drop: the item dropped by the boss. 0 = energy element, 1 = nothing, 2 = large health
+- healthBarPrimaryCol: the color of the left/right sides of the boss's health bar. 0-54, refer to objGlobalControl for what 0-54 mean in terms of color.
+- healthBarSecondaryCol: the color of the middle of the healthbar. 0-54
+- name: The name of the boss if it has any intro text. must be a string
+- lines: the number of lines in the boss dialogue.
+- text[number]: your boss text, number being the line number. must be a string
+
+Cut Man
+- hasKnockback: - If set to true, Cut Man's knockback from the original game is enabled.
+
+Komuso Man
+- deadlyShadowClones: - If set to true, the shadow clones to cross the entire screen rather than halfway.
+
+Crash Man
+- infiniteCrashBombs: - If set to true, Crash Man can fire any number of Crash Bombs, rather than being limited to one on screen.
+
+Centaur Man
+- randomSpawn: - If set to true, Centaur Man will teleport to random locations rather than on top of Mega Man.
+
+Chill Man
+- spreadAttack: - If set to false, Chill Man will not use his hard mode exclusive attack.
+- shotsToFire: Set to either 1, 2, or 3:  This determines how many chill spikes Chill Man fires. More than 3 is excessive, as he alternates between firing at the floor and wall.
+
+----- GIMMICKS -----
+objTileAnimation
+- animLength: how many frames of animtion will be shown
+- animTime: timer between frame changes, in frames
+- animID#: the backgrounds to use. For example,
+animID1 = tstHeatman
+animID2 = tstHeatmanAnimated
+and so on.
+- animateOnTransition: if set to false, the animation will stop during transitions.
+- animationLayer: the tile layer to animate.
+
+objWeaponSettings
+- global.weaponUnlocked[VARIABLE HERE]: if it's false, the weapon defined by "VARIABLE HERE" will not be selectable for that room.
+- global.infiniteEnergy[VARIABLE HERE]: if it's true, the weapon defined by "VARIABLE HERE" will have infinite energy for that room.
+- VARIABLE HERE valid options are (case sensitive): megabuster, hornetchaser, jewelsatellite, grabbuster, tripleblade, flashstopper, slashclaw, wheelcutter, sakugarne, rushcoil, rushjet, arrow, wire. if you typed it correctly, the variable should light up red.
+
+objSign
+- name: Name to display at the top of the textbox. It'll default to "Infobox (generated number)" otherwise. Must be a string. i.e.: name = "Knight Man"
+- text: Text to display. Must be a string. i.e.: text = "I didn't think I had it in me, until now. Now I can show you my true power! Knight Punch!"
+
+objAutoScroller
+- dir: direction of the autoscroll. "h" = horizontal. "v" = vertical. Default is "h".
+- myspeed: speed of the autoscroll. If it's positive, it'll go right/down. If it's negative, it'll go left/up. Default is 0.5.
+
+objLevelText
+- Text: self-explanatory. Make it a string. For example: Text = "I HOPE I WIN".
+
+objTeleporter
+- X: x position of where Mega Man will appear after using the teleporter.
+- Y: y position of where Mega Man will appear after using the teleporter.
+- Room: the room Mega Man will teleport to.
+- TeleportOnce: If set to true, the teleporter will only be useable once.
+- enemyWait: If set to true, it will wait for all enemies in the room to die before functioning.
+- LockLayer: The depth of the layer that the teleporter will hide until it is useable.
+
+objTeleporterPressUp
+- X: x position of where Mega Man will appear after using the teleporter.
+- Y: y position of where Mega Man will appear after using the teleporter.
+- Room: the room Mega Man will teleport to. Defaults as your current room.
+- Type: if set to 'exact', you'll get a checkpoint upon using the teleporter. 
+
+objYokuBlock
+- startup: The amount of frames it takes for the Yoku Block to first appear.
+- active: The amount of frames the Yoku Block stays visible.
+- wait: The amount of frames the Yoku Block will stay invisible after disappearing before reappearing again.
+
+objGutsLift
+- startingDirection: direction the lift starts moving in. -1 = left (default), 1 = right
+
+objFootholder
+- startingXDirection: direction the footholder starts moving horizontally in. -1 = left (default), 1 = right
+- startingYDirection: direction the footholder starts moving vertically in.
+- variation: If set to 2, the footholder will shoot. Default is 1.
+
+objElecBlock
+- dir: direction the block shoots its lightning. 1 = right (default), -1 = left
+- delay: the timer, in frames, until the elec block starts shooting when it comes onscreen. Default is 1.
+- zapLength: the length of time in frames the electricity will stay zapping until it disappears. Default is 60.
+- waitLength: the length of time in frames the block will wait after the electricity dies to start shooting again. Default is 60.
+
+objFireBlock
+- dir: direction the block shoots its fire. 1 = right (default), -1 = left
+- delay: the timer, in frames, until the fire block starts shooting when it comes onscreen. Default is 1.
+- zapLength: the length of time in frames the fire will stay burning until it disappears. Default is 60.
+- waitLength: the length of time in frames the block will wait after the fire dies to start shooting again. Default is 60.
+
+objMM2Conveyor
+- dir: direction of the conveyor. 1 = right (default), -1 = left
+- size: the size of the conveyor belt, measured in blocks. Due to how the object works, this is more like its "area of control" in blocks as it will basically just use this variable to change all the directions of nearby conveyors.
+
+objQuickLaserSpawner
+- variation: If set to 0, it will be the classic instant death quick laser. If set to 1, it will be a quick laser that drains your health like Mega Man Super Fighting Robot. Default is 1.
+- delay: Amount in frames until the quick laser comes out when the spawner comes onscreen. Default is 30.
+- laserspeed: The speed of the quick laser. Default is 4.
+- dir: Direction of the quick laser. 1 = right (default), -1 = left, 2 = down, -2 = up.
+
+objCrashLift
+- mdir: Direction of the lift. Will determine how it interacts with the line guides. Valid options are 'up' (default), 'left', 'right', and 'down'.
+- xSpeed: starting xspeed of the lift. default is 0
+- ySpeed: starting yspeed of the lift. default is -1
+
+objNeedleManNeedle
+- dir: Direction of the needle. Valid options are "down" (default), "up", "left", and "right".
+
+objTileScrollBG/objTileScrollSolid
+- xshift: Direction of the tile scroll. 1 = right (default), -1 = left
+- tile: Layer of the tiles to scroll. Default is 30.
+
+objSnakeBody
+- dir: direction. -1 = up, 1 = down (default)
+- yOffset: initial offset in pixels from the default position. 0 is default
+
+objJunkBlockGenerator
+- timer: timer, in frames, for when it spawns junk blocks. default is 120.
+
+objRingmanPlatform
+- dir: direction the platform will collapse in. -1 = left + coil sprite, 1 = right (default) + rainbow sprite.
+
+objDustmanBlock
+- healthpoints: its health. Default is 1.
+
+objHover
+- dir: direction it starts in. 1 = right (default), -1 = left
+
+objForkBlock
+- dir: direction. 1 = horizontal spikes (default), -1 = vertical spikes
+
+objBrightPlatform
+- Wait: The frames it'll wait when it reaches its destination before falling/turning around.
+- Distance: The distance it'll travel before stopping and falling. Default is 48 (travelling 6 blocks. Put in half the amount you want it to travel)
+- Direction: direction. 1 = start on left (default), -1 = start on right
+- sprite_index: Not exclusive to this object, but it works differently here. Set it to "sprBrightPlatformGreen" to make the platform go back and forth instead of falling.
+
+objCricket
+- Direction: direction: 1= right (default), -1 = left
+- Hops: how many hops it'll take before turning around. -1 is infinite. Default is 3
+
+objMM5SpinningPlatform
+- X: the x position it'll travel to.
+- Y: the y position it'll travel to.
+- Length: the time it'll take to get to its destination, in frames. Default is 64.
+- Wait: the time it'll wait before falling, in frames. Default is 64.
+
+objWaveManWarpLeft, objWaveManWarpRight, objWaveManWarpDown, objWaveManWarpUp
+- Speed: the speed it'll apply to Mega Man when he hits that object.
+
+objBubbleGenerator
+- TotalTimer
+- BubbleInterval
+- isSmall: if set to true, it will spawn small bubbles.
+- smallBubbleTimer: the timer it'll take for bubbles to pop once you land on them.
+- bubblesPerInterval
+
+objCrystalGenerator
+- variation: if 0 (default), a crystal will spawn every 2 seconds. else, it'll spawn one about every second
+
+objWaveStream
+- loops: the amount of times the animation will loop before the stream dissipates. default is 6
+- wait: timer, in frames, the stream will wait after dissipating before appearing again
+
+objWaveBike
+- dir: direction. 1 = right (default), -1 = left
+- MaxSpeed: the max speed of the wave bike. Default is 2.
+
+objBlockTrain
+- imgdelay: how fast the block will go through its fading animations. default is 6 frames for every image
+- spawndelay: how fast the block will create the next block after fading in. default is 10 frames after fading in
+- trainlength: the amount of blocks in the train. default is 10
+
+objTeckyun, objTeckyunRoof
+- variant: color. 0 = blue (default), 1 = orange
+- image_xscale: Not exclusive to this object, but works differently here. 1 = starts on the left (default), -1 = starts on the right
+
+objDarkmanTower
+- Height: the height of the tower, in blocks. default is 1
+- MyTile: the tile layer of the tower. default is 10.
+- AdditionalTile: secondary tile layer of the tower, if your tower is animated.
+
+objMM6Conveyor
+- dir: Direction. 1 = right (default), -1 = left
+
+objVerticleShift
+- Height: the height of the area the object will affect, in blocks.
+- Distance: the distance of the area the object will affect, in blocks.
+- Speed: the speed of the vertical movement.
+- MyTile: the tile layer to shift.
+- AdditionalTile: secondary tile layer to shift, if your shift is animated.
+
+objMegaman8Sled
+- dir: direction. 1 = right (default), -1 = left
+- MaxSpeed: the max speed of the wave bike. Default is 4.
+
+objCountBomb, objCountBombDown, objCountBombRight, objCountBombLeft
+- time: Time on the count bomb. Can go up to 9.
+
+objGalaxyManPortal
+- X: x to teleport mega man to
+- Y: y to teleport mega man to
+
+objSplashWomanWaterPlatform
+- startup: the amount of frames it'll take, when the platform comes onscreen, to be launched out of the wall.
+- active: the number of frames the block will be active before exploding.
+- Speed: the speed of the platform once it launches.
+
+objSandstormSpawner
+- myspeed: the speed of the sandstorm. If negative, the sandstorm will go left; if positive, it'll go right. default is -2
+- size: the size of each sandstorm object. Default is 32 blocks.
+- stormdelay: the time it will take, in frames, for the sandstorm to spawn.
+
+objCompactor
+- alarmtime: the delay until the compactor smashes down once it comes onscreen. default is 80 frames
+
+objWaterJet
+- dir: direction of the jet. Valid options are "up" (default), "down", "right", and "left".
+- startTimer: the time, in frames, until the water jet initially pops up, and the time it waits before popping up again.
+- activeTimer: the time, in frames, the water jet will stay in the air before going back down
+
+objEddie
+- myItem: the object he'll drop. If it isn't set, he'll just pick a random item like normal.
+- permanent: If set to false, he'll respawn even after he teleports away.
